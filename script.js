@@ -115,7 +115,7 @@ var AppController = (function(TodoCtrl, UICtrl){
         
         //1. Get the ID of the element to be deleted
         itemID = event.target.parentNode.parentNode.id;
-        if(itemID !== 'myUL' || itemID === ''){
+        if(itemID !== 'myUL' && itemID != ''){
             ID = parseInt(itemID.split('-')[1]);
 
             //2. Update Item in UI
